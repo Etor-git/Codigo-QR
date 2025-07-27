@@ -1,1 +1,16 @@
-import qrcode # type: ignoreurl = "URL de tu preferencia"qr = qrcode.QRCode(    version=1,    box_size=35,    border=5)qr.add_data(url)qr.make(fit=True)imagen = qr.make_image()imagen.save("Mi primer QR")
+import qrcode # type: ignore
+
+url = "URL de tu preferencia"
+
+qr = qrcode.QRCode(
+    version=1,
+    box_size=35,
+    border=5
+)
+
+
+qr.add_data(url)
+qr.make(fit=True)
+
+imagen = qr.make_image()
+imagen.save("Mi primer QR")
