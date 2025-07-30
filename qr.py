@@ -1,4 +1,4 @@
-import qrcode # type: ignore
+import qrcode
 
 url = "URL de tu preferencia"
 
